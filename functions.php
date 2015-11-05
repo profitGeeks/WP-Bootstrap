@@ -595,32 +595,6 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_theme_js' );
 
-// Get <head> <title> to behave like other themes
-function wp_bootstrap_wp_title( $title, $sep ) {
-  global $paged, $page;
-
-  if ( is_feed() ) {
-    return $title;
-  }
-
-  // Add the site name.
-  $title .= get_bloginfo( 'name' );
-
-  // Add the site description for the home/front page.
-  $site_description = get_bloginfo( 'description', 'display' );
-  if ( $site_description && ( is_home() || is_front_page() ) ) {
-    $title = "$title $sep $site_description";
-  }
-
-  // Add a page number if necessary.
-  if ( $paged >= 2 || $page >= 2 ) {
-    $title = "$title $sep " . sprintf( __( 'Page %s', 'wpbootstrap' ), max( $paged, $page ) );
-  }
-
-  return $title;
-}
-add_filter( 'wp_title', 'wp_bootstrap_wp_title', 10, 2 );
-
 // Related Posts Function (call using wp_bootstrap_related_posts(); )
 function wp_bootstrap_related_posts() {
   echo '<ul id="bones-related-posts">';
