@@ -1,12 +1,12 @@
 ProfitGeeks 1.0 Wordpress Bootstrap Theme
 ===================
 
-No frills. Uses Bootstrap 3.3.4
+<p>No frills. Uses Bootstrap 3.3.4<p>
 
-Includes Boostrap Select in boostrap.min.js file
-
-https://silviomoreto.github.io/bootstrap-select/
+<p>Includes Boostrap Select in boostrap.min.js file<br>
+https://silviomoreto.github.io/bootstrap-select/<p>
 
 ===================
+
 
 Compile CSS using library/wp.less to wp.css
