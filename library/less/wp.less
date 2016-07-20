@@ -72,6 +72,25 @@ input[type=submit] {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }
 
+/// transitions
+
+.selected {
+  background-color: @selection-color !important;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.btn-default, .btn-primary, .btn-info, .btn-group, table.buttons td, table.buttons th {
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
 /*! * Bootstrap-select v1.10.0 (http://silviomoreto.github.io/bootstrap-select) */
 
 select.bs-select-hidden,

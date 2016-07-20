@@ -21,3 +21,10 @@ $RECYCLE.BIN/
 
 # Ignore these so they're not stored in source control
 node_modules
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+*.iml
+.idea/vcs.xml
